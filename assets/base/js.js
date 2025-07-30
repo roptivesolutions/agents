@@ -1,5 +1,5 @@
- document.addEventListener('DOMContentLoaded', function () {
-    // Initialize chat
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.n8nChat) {
     window.n8nChat.createChat({
       webhookUrl: 'https://n8n-ipq3.onrender.com/webhook/f686bd4d-17ea-4a0b-be46-a868dd1e1ecd/chat',
       defaultLanguage: 'en',
@@ -18,14 +18,16 @@
       },
     });
 
-    // Replace powered by text
+    // Optional DOM customization
     const poweredByDiv = document.querySelector('.chat-powered-by');
     if (poweredByDiv) {
       const newAnchor = document.createElement('a');
       newAnchor.href = 'https://roptive.com';
       newAnchor.textContent = 'Roptive Solution';
-
       poweredByDiv.innerHTML = 'Powered by ';
       poweredByDiv.appendChild(newAnchor);
     }
-  });
+  } else {
+    console.error('n8nChat not available.');
+  }
+});
