@@ -2434,6 +2434,9 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
-.p-size{
-  font-size: 15px !important;
+h2.p-size {
+  font-size: 15px;
+  font-weight: normal; 
+  line-height: 1.6;   
 }
+
