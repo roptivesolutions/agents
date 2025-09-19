@@ -3,7 +3,7 @@
 import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/chat.bundle.es.js';
 
 createChat({
-  webhookUrl: 'https://n8n-ipq3.onrender.com/webhook/f686bd4d-17ea-4a0b-be46-a868dd1e1ecd/chat',
+  webhookUrl: 'https://bot.roptive.com/webhook/f686bd4d-17ea-4a0b-be46-a868dd1e1ecd/chat',
   defaultLanguage: 'en',
   initialMessages: [
     'Hi there!',
